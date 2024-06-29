@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout Techniques</title>
+</head>
+<body>
+    <!--Senantic tags: <header>, <footer>, <main>, <article>, <aside>, <nav>, <section>-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Exparience</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About</h2>
+            Anik Sen || Student || Learner
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum blanditiis consequatur error hic. Tenetur error consectetur modi voluptates itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi delectus labore. Unde temporibus quasi, ad excepturi porro sunt ullam!</p>
+        </section>
+        <section>
+            <h2>Education</h2>
+            Education: DIU(B.Sc. in CSE) || BAFSC || KCPSC
+        </section>
+        <section>
+            <h2>Exparience</h2>
+            <ul>
+                <li>Eat</li>
+                <li>Sleep</li>
+                <li>Go to Washrooom</li>
+            </ul>
+        </section>
+        <article>
+            <p><b>My story</b></p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis culpa mollitia aperiam nulla quod. Fugit eligendi molestiae explicabo corporis aperiam ratione. Iusto dolor consectetur adipisci possimus exercitationem deleniti modi totam.
+        </article>
+
+        <aside>This is an AD</aside>
+
+        <a href="https://google.com" target="_blank">Google</a>
+        <br>
+        <a href="https://google.com"><img src="chrome://branding/content/about-logo.png" height="100"></a>
+
+        <!--Div is a container used for other HTML elements, Its a block elements, takes full width but by default hight 0-->
+        <div style="background-color: aqua;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odit eveniet harum unde dignissimos vero maxime ipsam iusto nihil, quasi, enim voluptas corporis sunt quam placeat nemo necessitatibus voluptate sapiente!</p>
+        </div>
+        <div style="background-color: blueviolet;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero commodi veniam quidem quibusdam doloremque ex nostrum in quaerat! Beatae aliquid maxime, autem sequi obcaecati hic nam quo suscipit nisi doloremque.</p>
+        </div>
+
+        <!--Span is also a container used for other HtML elements. It's an inline element(takes width as per size)-->
+        <span style="background-color: violet;">Hello World!</span>
+
+        <!--Ordered and Unordered list-->
+        <section>
+            <h4>Unordered lists</h4>
+            <ol>
+                <li>Apple</li>
+                <ul>
+                    <li>color: red</li>
+                    <li>season: winters</li>
+                </ul>
+                <li>Banana</li>
+                <ul>
+                    <li>color: yellow</li>
+                    <li>season: any</li>
+                </ul>
+                <li>Black Bery</li>
+                <li>Mango</li>
+                <ul>
+                    <li>color: green</li>
+                    <li>season: summer</li>
+                </ul>
+                <li>Litchi</li>
+            </ol>
+        </section>
+
+        <!--Table-->
+        <section>
+            <h1>Table</h1>
+            <table>
+                <thead>
+                    <caption>Student Data</caption>
+                <tr>
+                    <th colspan="3">Information</th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll</th>
+                    <th>Section</th>
+                </tr>
+                <tr>
+                </thead>
+                <tbody>
+                    <td>Anik</td>
+                    <td>776</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>Rony</td>
+                    <td>712</td>
+                    <td>C</td>
+                </tr>
+                </tbody>
+                    
+            </table>
+        </section>
+
+    <!--Form-->
+    <section>
+        <h2>Form</h2>
+        <form action="/action.php">
+            <input type="text" placeholder="username">
+        <br>
+            <input type="password" placeholder="password">
+        <br>
+        <br>
+
+        <!--Radio button-->
+        select your class
+        <br>
+        <label for="101">
+            <input type="radio" value="class XI" name="class" id="101">class XI
+            <!-- <input type="radio" value="class XII" name="class" id="101">class XII     --><!--Doesn't word for same id-->
+        </label>
+        <br>
+        <label for="102">
+            <!-- <input type="radio" value="class XI" name="class">class XI -->
+            <input type="radio" value="class XII" name="class" id="102">class XII
+        </label>
+        <br>
+        <br>
+
+        <!--Check boxs-->
+        your favorite subjects:
+        <br>
+        <label for="103">
+            <input type="checkbox" value="math" name="subject" id="103">math
+        </label>
+        <br>
+        <label for="104">
+            <input type="checkbox" value="phy" name="subject" id="104">phy
+        </label>
+        <br>
+        <label for="105">
+            <input type="checkbox" value="chem" name="subject" id="105">chem
+        </label>
+        <br>
+        <label for="106">
+            <input type="checkbox" value="cs" name="subject" id="106">computer science
+        </label>
+        <br>
+        <br>
+
+        <!--Drop down manu-->
+        select your city
+        <select name="city">
+            <option value="Dhaka">Dhaka</option>
+            <option value="Ctg">Chitagong</option>
+            <option value="Kgc">Khagrachari</option>
+        </select>
+        <br>
+
+        <!--textarea-->
+        <textarea name="feedback" placeholder="please give your feedback" rows="5" cols="50">feedback</textarea>
+        <br>
+
+        <!--submit button-->
+        <input type="submit" value="submit">
+        </form>
+    </section>
+    
+    <!--class & id-->
+    <!-- <section>
+            <div id="id1" class="group1"></div>
+            <div id="id2" class="group1"></div>        
+    </section> -->
+    <br>
+    <br>
+    <!--iframe tag shows website inside website-->
+    <iframe src="https://www.wikipedia.org/" height="300" width="400"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YicpcicZRYg?si=OO_RLfo1-xERKdxB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!--video tag-->
+    <br>
+    <video src="https://youtu.be/a9lTotxV23g?si=6UNCuLR9tXgA8rVg" controls loop>Ashomapto</video>
+    </main>
+    <footer>
+        <h4>Contact</h4>
+        <ul>
+            <li>Email: cse2023anik@gmail.com</li>
+            <li>Mobile: 01854344631</li>
+        </ul>
+    </footer>
+</body>
+</html>
