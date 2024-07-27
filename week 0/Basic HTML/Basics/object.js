@@ -70,3 +70,18 @@ console.log(objArr);
 //access an element using index
 console.log(objArr.name[2]);
 console.log(objArr.age[2]);
+
+//useing object into an array
+var arrObj = [
+    'Anik',
+    {
+        name: 'Ronik',
+        age: 17,
+        job: 'Student'
+    },
+    'Karim'
+];
+console.log(arrObj);
+//access an element using index
+console.log(arrObj[1].name);
+console.log(arrObj[1].age);
