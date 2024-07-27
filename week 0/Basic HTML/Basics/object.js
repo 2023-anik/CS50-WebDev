@@ -35,3 +35,4 @@ console.log(person1.occupation);
 //Using Bracket Notation    
 console.log(person3['firstName']);
 console.log(person3['occupation']);
+console.log('Anik\'s age: '+person3['age']);
