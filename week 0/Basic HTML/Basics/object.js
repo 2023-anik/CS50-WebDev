@@ -36,3 +36,37 @@ console.log(person1.occupation);
 console.log(person3['firstName']);
 console.log(person3['occupation']);
 console.log('Anik\'s age: '+person3['age']);
+
+//added new item of an object
+person3.zipCode=4400;
+console.log(person3);
+
+//added a function as a item of an object
+person3.welComeMsg = function(){
+    console.log('Hello There');
+};
+console.log(person3);
+person3.welComeMsg();
+
+
+var person4 = {
+    firstName: 'Ganjutty',
+    lastName: 'Babaty',
+    age: 10000,
+    occupation: 'Matal',
+    welComeMsg: function(){
+        console.log('Hello Ganjutty');
+    }
+};
+person4.welComeMsg();
+
+//useing array into an object
+var objArr={
+    normal: 'Normal Item',
+    name: ['Rahim', 'Karim', 'Rafiq', 'Shafiq'],
+    age: [10, 20, 30, 40]
+};
+console.log(objArr);
+//access an element using index
+console.log(objArr.name[2]);
+console.log(objArr.age[2]);
