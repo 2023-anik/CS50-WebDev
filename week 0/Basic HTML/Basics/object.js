@@ -1,0 +1,37 @@
+// Using object literal notation, is generally easier to use and more concise compared to the new Object() syntax
+var person1 = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    occupation: "Developer"
+};
+console.log(person1);
+
+// Using the new Object() syntax
+var person2 = new Object();
+person2.firstName = "John";
+person2.lastName = "Doe";
+person2.age = 30;
+person2.occupation = "Developer";
+console.log(person2);
+
+var person3={
+    firstName: 'Anik',
+    lastName: 'Sen',
+    age: 21,
+    occupation: 'Student'
+};
+console.log(person3);
+
+/*
+how to access an object
+1.Dot Notation
+2.Bracket Notation
+*/
+//Using Dot Notation
+console.log(person1.firstName);
+console.log(person1.occupation);
+
+//Using Bracket Notation    
+console.log(person3['firstName']);
+console.log(person3['occupation']);
