@@ -129,3 +129,8 @@ var hasBal=listBal.includes('Chal');
 console.log(hasBal);//true
 var hasFal=listBal.includes('Fal');
 console.log(hasFal);//false
+
+//for-of loop to access elements of an array
+let students=["Anik", "Ronik", "Rahim", "Karim"];
+for(let student of students)
+    console.log(student);

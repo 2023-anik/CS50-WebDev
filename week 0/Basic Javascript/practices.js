@@ -60,3 +60,13 @@ Prompt the user to enter their full name. Generate a username for them based on 
 // // console.log(`@${userName}${userName.length}`);
 // userName="@"+userName+userName.length;
 // console.log(userName);
+
+
+/*
+For a given array with marks of students -> [85, 97, 44, 37, 76, 60], find the average marks of the entire class
+*/
+let marks=[85, 97, 44, 37, 76, 60];
+let sum=0;
+for(let mark of marks)
+    sum+=mark;
+console.log(`Average marks of the entire class is ${sum/6}`);

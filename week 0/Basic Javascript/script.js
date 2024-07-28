@@ -265,10 +265,10 @@ console.log(fun.includes("Anik"));//true
 console.log(fun.includes("Sen"));//false
 
 //5.To want to know if a string starts or ends with a particular substring
-console.log(fun.startsWith("My"));
-console.log(fun.startsWith("Anik"));
-console.log(fun.endsWith("Anik"));
-console.log(fun.endsWith("My"));
+console.log(fun.startsWith("My"));//true
+console.log(fun.startsWith("Anik"));//false
+console.log(fun.endsWith("Anik"));//true
+console.log(fun.endsWith("My"));//false
 
 //6.Finding the position of a substring in a string
 console.log(fun.indexOf("Anik"));//11
