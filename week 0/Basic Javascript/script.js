@@ -216,3 +216,64 @@ for(i=0; i<10; i++){
     }
     console.log('i is now at: '+i);
 }
+
+//for-of loops only using on string and arrray
+let str="Anik";
+for(let i of str)
+    console.log("i = ",i);
+
+//for-in loop only used on array and objects
+let studentInfo={
+    fullName: "Anik Sen",
+    age: 21,
+    ocupation: "Learner",
+    cgpa: 3.99,
+    isMaried: false
+};
+for(let key in studentInfo)
+    console.log("key = ", key, " value = ", studentInfo[key]);
+
+//Templete Literals: `string text ${expression} string tex`
+//is called string interpolation
+let obj={
+    item: "Pen",
+    price: 10
+};
+console.log("The price of the",obj.item,"is",obj.price,"taka");
+//using templete literals
+console.log(`The price of the ${obj.item} is ${obj.price} taka`);
+
+//String manipulation
+let fun="   My Name Is Anik   ";
+
+// fun.toUpperCase();//nothing changed cause original string doen't changed
+// console.log(fun);
+
+//1.
+let newFun=fun.toUpperCase();
+console.log(newFun);
+//2.
+newFun=fun.toLowerCase();
+console.log(newFun);
+//3.
+newFun=fun.trim();//removes whitespaces, it works for starting and ending whitespaces
+console.log(newFun);
+
+fun="My Name Is Anik";
+//4.Testing if a string contains a substring
+console.log(fun.includes("Anik"));//true
+console.log(fun.includes("Sen"));//false
+
+//5.To want to know if a string starts or ends with a particular substring
+console.log(fun.startsWith("My"));
+console.log(fun.startsWith("Anik"));
+console.log(fun.endsWith("Anik"));
+console.log(fun.endsWith("My"));
+
+//6.Finding the position of a substring in a string
+console.log(fun.indexOf("Anik"));//11
+console.log(fun.indexOf("X"));//-1(not found)
+
+//7.replace a substing into another string
+fun=fun.replace("Anik", "Ronik");
+console.log(fun);
