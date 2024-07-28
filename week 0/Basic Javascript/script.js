@@ -1,12 +1,48 @@
+fullname="Anik Sen";
+console.log(fullname);
+aa=null;
+bb=undefined;
+console.log(aa);
+console.log(bb);
 console.log('hello World');
 console.log('hi world');
-var a=10;//number
-var b=20;
+
+
+//for defining a variable always use let key word don't use var key cause it is updated, can't be re-declared
+var age=10;
+var age=20;
+var age=30;
+console.log(age);//log: 30
+
+let firstName='Anik';
+firstName='Ronik';
+console.log(firstName);
+
+
+let a=10;//number
+let b=20;
 console.log(a+b);
-var first='Anik';//string
-var second='Sen';
+let first='Anik';//string
+let second='Sen';
 console.log(first+' '+second);
 a=1.12;
+
+//const variable can't be re-declared or updated
+const lastName='Sen';
+// lastName='Matal';//generated a error
+console.log(lastName);
+
+//scope
+{
+    let a=5;
+    // let a=15;//this is not possible
+    console.log(a);
+}
+{
+    let a=50;
+    console.log(a);
+}
+
 // b=1.12;
 console.log(a+b);
 var something='This is a Sentence';//use double("") or single('') your wish
@@ -22,12 +58,28 @@ console.log(anything);
 // 2. string
 // 3. Boolean
 // 4. null
+// 5. BigInt
+// 6. Symbol
+// 7. Undefined
+
+let bigInteger=BigInt("12345");
+console.log(bigInteger);//log: 12345n
 
 //to see the variable's data type
 console.log(typeof(anything));
 console.log(typeof(something));
 console.log(typeof(a));
 console.log(typeof(b));
+
+//object
+const student={
+    fullName: "Anik Sen",
+    age: 21,
+    cgpa: 3.9,
+    isPassed: true
+};
+console.log(typeof student);
+console.log(student);
 
 var magic=10+10+10+20+' this is magic '+10;
 console.log(magic);
@@ -36,6 +88,15 @@ console.log(++b);
 console.log(--b);
 // console.log(b--);
 
+//Arithmetic Operators
+let c=5;
+let d=2;
+console.log(c+" + "+d + " = "+ (c+d));
+console.log(c+" - "+d + " = "+ (c-d));
+console.log(c+" * "+d + " = "+ (c*d));
+console.log(c+" / "+d + " = "+ (c/d));
+console.log(c+" % "+d + " = "+ (c%d));
+console.log(c+" ** "+d + " = "+ (c**d));//5^2=25
 
 //comparison operator
 console.log(10==10);//true

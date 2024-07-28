@@ -78,3 +78,72 @@ console.log(a);
 aFunc(a);
 console.log(a);
 
+
+//Closure: 
+//Demo 1
+function closuresDemo(){
+    var x=10;
+    function anotherFunc(){
+        var y=20;
+        console.log('Sum: '+(x+y));
+    }return anotherFunc;
+}
+const returnedFunc=closuresDemo();
+returnedFunc();
+
+//Demo2
+function outerFunction() {
+    let outerVariable = 'I am outside!';
+
+    function innerFunction() {
+        console.log(outerVariable); // Accesses outerVariable from outerFunction
+    }
+    return innerFunction;
+}
+const closureFunction = outerFunction();
+closureFunction(); // Logs: 'I am outside!'
+
+//Demo3
+function aParentFunc(a){
+    return function(b){
+        console.log('Sum: '+(a+b));
+    }
+}
+aParentFunc(5)(5);
+
+//Demo4
+function aParentFunc2(a){
+    return function(b){
+        // console.log('Sum: '+(a+b));
+        return 'Sum: '+(a+b);
+    }
+}
+const aParentVar2=aParentFunc2(6);
+const total2=aParentVar2(3);
+console.log(total2);
+
+//IIFE(Immediately Invoked Function Expression)
+/*
+//Syntax
+(function() {
+    // Code to be executed immediately
+})();
+*/
+//Demo1:
+(function aDemoFunc(){
+    console.log('Hello World');
+})();//log: Hello World
+
+//Demo2:
+(function(param) {
+    console.log('Parameter: ' + param);
+})('Hello');
+
+//Demo3:
+var suum=(function(){
+    return 10+20;
+})();
+console.log(suum);
+
+alert('Hi, I\'m here:)');
+alert('Hello!');
