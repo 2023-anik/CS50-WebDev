@@ -127,3 +127,67 @@ c. Add Amazon at the end
 // companies.push("Amazon"); 
 // console.log(companies);
 // **********************
+
+
+/*
+Create a function using the "function" keyword that takes a String as an argument Y returns the number of vowels in the string.
+*/
+// **********************
+// function numOfVow(words){
+//     let cnt=0;
+//     for(let wd of words)
+//         if(wd==='a' || wd==='e' || wd==='i' || wd==='o' || wd==='u')
+//             cnt++;
+//     return cnt;
+// }
+// **********************
+
+
+/*For a given array of numbers, print the square of each value using the forEach loop.
+*/
+// **********************
+// let arr=[1, 2, 3, 4, 5];
+// arr.forEach((val)=>{
+//     console.log(val*val);//val**2
+// });
+// **********************
+//or
+// **********************
+// let clacSquare=(val)=>{
+//     console.log(val**2);
+// };
+// arr.forEach(clacSquare);
+// **********************
+
+/*We are given array of marks of students. Filter out of the marks of students that scored 90+ marks.
+*/
+// **********************
+// let marks=[87, 93, 64, 99, 86];
+// let filteredMarks=marks.filter((mark)=>{
+//     return mark>=90;
+// });
+// **********************
+
+
+/*Take a number n as input from user. Create an array of numbers from 1 to n.
+*/
+// **********************
+// let n=Number(prompt("Enter a number"));
+// let arr=[];
+// for(let i=1; i<=n; i++)
+//     arr.push(i);
+// console.log(arr);
+
+// //Use the reduce method to calculate sum of all numbers in the array
+// let sum=arr.reduce((prev, crnt)=>{
+//     return prev+crnt;
+// })
+// console.log(`sum of all elements is ${sum}`);
+
+// //Use the reduce method to calculate product of all numbers in the array
+// let prduct=arr.reduce((prev, crnt)=>{
+//     return prev*crnt;
+// })
+// console.log(`product of all elements is ${prduct}`);
+// **********************
+

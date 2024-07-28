@@ -1,0 +1,16 @@
+body{
+    background-color: aquamarine;
+    text-align: center;
+}
+h1{
+    text-shadow: rgb(29, 28, 28);
+    color: darkgreen;
+    background-color: rgb(140, 127, 255);
+}
+p{
+    color: brown;
+}
+button{
+    color: rgb(244, 246, 252);
+    background-color: rgb(36, 13, 138);
+}

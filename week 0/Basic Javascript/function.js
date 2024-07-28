@@ -147,3 +147,19 @@ console.log(suum);
 
 alert('Hi, I\'m here:)');
 alert('Hello!');
+
+
+//Arrow Function -> short form of normal funciton
+//part of Modern Function
+const sumTwoNum=(x, y)=>{
+    console.log(x+y);
+};
+
+const mulTwoNum=(x,y)=>{
+    console.log(x*y);
+}
+
+const powOfTwo=(x)=>{
+    return 2**x;
+}
+console.log(powOfTwo(4));

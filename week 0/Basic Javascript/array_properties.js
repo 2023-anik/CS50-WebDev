@@ -119,10 +119,6 @@ var sum=nums.reduce(function(total, num){
 }, 0);
 console.log(sum);//28
 
-//forEach(): Executes a provided function once for each array element
-nesha.forEach(function(neSha){
-    console.log(neSha);
-});
 
 // find(): Returns the value of the first element in the array that satisfies the provided testing function.
 var firstOdd = nums.find(function(num) {
@@ -144,3 +140,18 @@ console.log(hasFal);//false
 let students=["Anik", "Ronik", "Rahim", "Karim"];
 for(let student of students)
     console.log(student);
+
+
+//forEach(): Executes a provided function once for each array element
+arr.forEach(function(val){
+    console.log(val);
+});
+//or
+arr.forEach(function printVal(val){
+    console.log(val);
+})
+//or using arrow forEach function
+arr.forEach((val, idx, arr)=>{
+    console.log(val, idx, arr);
+})
+
