@@ -61,6 +61,16 @@ console.log(eats);
 eats.splice(1,2, 'Greenberry');
 console.log(eats);
 
+//add, delete and replace using splice
+let arr=[1, 2, 3, 4, 5, 6, 7];
+//add elements
+arr.splice(2, 0, 101);//array.splice(bigining index, how many elements want to delete, replace value)
+//delete elements
+arr.splice(3, 1);
+//replace element
+arr.splice(3, 1, 105);
+
+
 //indexOf()
 var nesha=['Mod', 'Gaja', 'Afim', 'Baba'];
 console.log(nesha.indexOf('Gaja'));
