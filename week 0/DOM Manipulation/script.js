@@ -27,19 +27,19 @@ box4.style.backgroundColor="yellow";
 //     box.style.backgroundColor="black";
 // });
 
-// //or
-// boxes=document.getElementsByClassName("box");//frequently used querySelector insted of getElementsByClassName
-// //it gives a nodeList
-// //nodeList into array
-// let boxList=document.querySelectorAll(".box");
-// let boxArray=Array.prototype.slice.call(boxList);
+//or
+boxes=document.getElementsByClassName("box");//frequently used querySelector insted of getElementsByClassName
+//it gives a nodeList
+//nodeList into array
+let boxList=document.querySelectorAll(".box");
+let boxArray=Array.prototype.slice.call(boxList);
 
-// // //just fun
-// for(let i=0; i<boxArray.length; i++){
-//     boxArray[i].textContent=`Box ${i+1} - Updated`;
-//     boxArray[i].style.width = "150px"; // Change the width
-//     boxArray[i].style.height = "150px"; // Change the height
-//     boxArray[i].style.color="blue";
-//     boxArray[i].style.backgroundColor="yellow";
-//     boxArray[i].style.fontWeight = "bold"; // Make the text bold
-// }
+// //just fun
+for(let i=0; i<boxArray.length; i++){
+    boxArray[i].textContent=`Box ${i+1} - Updated`;
+    boxArray[i].style.width = "150px"; // Change the width
+    boxArray[i].style.height = "150px"; // Change the height
+    boxArray[i].style.color="blue";
+    boxArray[i].style.backgroundColor="yellow";
+    boxArray[i].style.fontWeight = "bold"; // Make the text bold
+}

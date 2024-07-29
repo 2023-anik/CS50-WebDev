@@ -52,12 +52,15 @@ box2.insertAdjacentElement("beforebegin", newDiv);
 box2.insertAdjacentElement("afterend", newParap);
 
 //Element movement form one place to another place
-box1.appendChild(box2);
-// box2.appendChild(box1); 
+box1.appendChild(box2);//box2 is made a child of box1
+// box2.appendChild(box1);
+
 
 //place box2 over the box1
-let box1h4=document.querySelector("#box1>h4");//h4 is a child of box1
-box1.insertBefore(box2, box1h4);
+// let box1h4=document.querySelector("#box1>h4");//h4 is a child of box1
+// box1.insertBefore(box2, box1h4);
+//or simply
+box1.prepend(box2);
 
 //remove elements
 
@@ -69,6 +72,7 @@ box1.childNodes[1].remove();//chilNodes[1]=<div id="box2" class="box" data-atr="
 // box1.childNodes[1].remove();
 
 //parent er child selec kore remove kora
+let box1h4=document.querySelector("#box1>h4");
 box1.removeChild(box1h4);
 
 //element sorasori select kore remove kora

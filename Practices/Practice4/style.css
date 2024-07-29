@@ -1,0 +1,11 @@
+.para {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #10225f;
+    background-color: #bbbbbb;
+    padding: 10px;
+    border: 2px solid #1b752a;
+    border-radius: 5px;
+    margin: 10px 0;
+}
