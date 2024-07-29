@@ -1,0 +1,12 @@
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 15px 0;
+    padding: 15px;
+    /* display: inline-block; */
+    text-align: center;
+    line-height: 2; /*Center text vertically*/
+    font-size: 20px;
+    color: rgb(239, 243, 2);
+    background-color: #333;
+}

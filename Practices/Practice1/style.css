@@ -1,0 +1,9 @@
+body{
+    background-color:rgb(0, 0, 0);
+    font-family: 'consolas', monospace;
+}
+h2 {
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(248, 9, 9); /* Example value */
+    color:aquamarine;
+}
