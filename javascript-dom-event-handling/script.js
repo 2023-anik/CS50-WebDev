@@ -14,10 +14,15 @@ function showAlert(){
 // 5.Compatibility Issues
 // ***************
 const clickMeBtn=document.querySelector("#btn-click-me");
-clickMeBtn.onclick=function(event){
-    event.stopPropagation();//for doesn't "Bubble Up"
-    // event.stopImmediatePropagation();
-    console.log("Button Clicked");
+// clickMeBtn.onclick=function(event){
+//     event.stopPropagation();//for doesn't "Bubble Up"
+//     // event.stopImmediatePropagation();
+//     console.log("Button Clicked");
+// }
+//or
+clickMeBtn.onclick=(event)=>{
+    event.stopPropagation();
+    console.log("Button was clicked");
 }
 clickMeBtn.onmouseover=function(){
     clickMeBtn.style.backgroundColor="green";
