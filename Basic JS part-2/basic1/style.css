@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#demo{
+    line-height: 5rem;
+    background-color: rgb(13, 13, 41);
+    color: white;
+    display: inline;
+    padding: 1rem;
+    font-weight: bold;
+}
