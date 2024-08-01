@@ -19,3 +19,30 @@ a{
     color:white;
     text-decoration: none;
 }
+
+.dibba{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin-top: 5px;
+    display: inline-block;
+    /* padding-top: 15px; */
+}
+
+#div1{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#div2{
+    background-color: rgba(0, 255, 0, 0.5);
+}
+#div3{
+    background-color: rgba(0, 0, 255, 0.5);
+}
+footer{
+    background-color: #0f1111;
+    color: white;
+    text-align: center;
+}
+main{
+    height: 577px;
+}
