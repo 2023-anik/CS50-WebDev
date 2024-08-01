@@ -1,0 +1,17 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#heda{
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: green underline;
+}
+#outer{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+#inner{
+    font-size: 10px;
+    text-transform: lowercase;
+}

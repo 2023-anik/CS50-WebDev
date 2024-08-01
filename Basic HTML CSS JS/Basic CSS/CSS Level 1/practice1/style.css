@@ -1,0 +1,19 @@
+*{
+    text-align: center;
+}
+
+/* .heading{
+    color: red;
+} */
+ h1, h2, h3{
+    color: red;
+ }
+
+#box{
+    background-color: rgb(19, 19, 37);
+    color: white;
+}
+
+button{
+    background-color: green;
+}
