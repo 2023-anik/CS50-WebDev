@@ -1,0 +1,86 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+}
+#div1{
+    background-color: red;
+    position: static;
+    top: 10px;/*doesn't work cause position static*/
+    left: 10px;/*doesn't work cause positon static*/
+}
+#div2{
+    background-color: green;
+    position: relative;/*element is relative to itself*/
+    top: 30px;/*up to bottom movement*/
+    left: 20px;/*let to right movement*/
+    /* right: 20px; */
+}
+#div3{
+    background-color: blue;
+    position:absolute;
+    /* position relative to its closest positioned ancestor */
+    top: 200px;
+    right: 150px;
+}
+#div4{
+    background-color: cyan;
+    position: fixed;
+    top:0px;
+    left: 0px;
+}
+#div5{
+    background-color: chocolate;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    width: 100vw;
+}
+
+#div6{
+    background-color: hotpink;
+    position: sticky;
+    top:0px;
+}
+
+
+
+#div7{
+    background-color: red;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    z-index: -1;
+}
+#div8{
+    background-color: green;
+    position: relative;
+}
+#div9{
+    background-color: blue;
+    position: relative;
+    right: 30px;
+    top:-30px;
+}
+
+#div10{
+    background-color: red;
+    position: relative;
+    left: 30px;
+    top: -30px;
+    z-index: 1;
+}
+#div11{
+    background-color: green;
+    position: relative;
+    z-index: -1;
+}
+#div12{
+    background-color: blue;
+    position: relative;
+    left: -30px;
+    top:30px;
+    z-index: -100;
+}
