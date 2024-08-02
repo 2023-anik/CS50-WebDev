@@ -37,7 +37,8 @@ async function getFile() {
       };
       req.send();
     });
-    document.getElementById("demo").innerHTML = await myPromise;
+    // document.getElementById("demo").innerHTML = await myPromise;
+    myDisplayer(await myPromise);
   }
   
   getFile();
