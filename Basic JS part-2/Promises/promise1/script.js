@@ -1,18 +1,21 @@
 function myDisplayer(some) {
     document.getElementById("demo").innerHTML = some;
   }
-  
-  function getFile(myCallback) {
+
+let myPromise = new Promise(function(myResolve, myReject) {
     let req = new XMLHttpRequest();
+    req.open('GET', "mycar.html");
     req.onload = function() {
       if (req.status == 200) {
-        myCallback(this.responseText);
+        myResolve(req.response);
       } else {
-        myCallback("Error: " + req.status);
+        myReject("File not Found");
       }
-    }
-    req.open('GET', "mycar.html");
+    };
     req.send();
-  }
+  });
   
-  getFile(myDisplayer); 
+  myPromise.then(
+    function(value) {myDisplayer(value);},
+    function(error) {myDisplayer(error);}
+  );
