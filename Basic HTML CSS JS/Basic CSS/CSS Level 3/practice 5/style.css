@@ -1,0 +1,14 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-image: url("https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg");
+    background-size: cover;
+    text-align: center;
+    font-weight: bold;
+    /* text-shadow: h-offset v-offset blur-radius color; */
+    text-shadow: 2px -2px gray;
+    position: fixed;
+    right: 0px;
+    top:50px;
+    /* z-index: 1; */
+}
