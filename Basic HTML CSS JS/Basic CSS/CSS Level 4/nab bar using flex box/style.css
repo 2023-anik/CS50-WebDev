@@ -1,0 +1,32 @@
+#navbar{
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(82, 75, 72);
+    font-weight: bold;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+
+
+.outer{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    border: 2px dashed black;
+}
