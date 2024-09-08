@@ -12,20 +12,6 @@ body {
     z-index: 1030; /* Ensure the navbar is on top */
 }
 
-/* Navbar Items Background */
-.navbar .nav-link {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for links */
-    color: #fff; /* Ensure the text is visible */
-    border-radius: 4px; /* Rounded corners for a nicer look */
-    padding: 5px 10px; /* Padding around the text */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Shadow for better readability */
-}
-
-.navbar .nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
-    color: #f1c40f; /* Hover color */
-}
-
 /* Center Navbar Items */
 .navbar-collapse {
     justify-content: center; /* Center the items horizontally */
@@ -37,26 +23,43 @@ body {
     margin-right: 15px; /* Space between items */
 }
 
-.navbar-nav .nav-item:first-child {
-    margin-left: 0; /* Remove left margin from the first item */
-}
-
-.navbar-nav .nav-item:last-child {
-    margin-right: 0;
-
-}
-.nav-link {
-    color: #fff !important;
+/* Navbar Link Styles */
+.navbar .nav-link {
+    position: relative; /* Necessary for the pseudo-element to position relative to the link */
+    color: #0e0f0c !important;
     font-size: 18px;
+    padding: 5px 10px; /* Adjust padding as needed */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-    color: #f1c40f !important;
-    text-shadow: 1px 1px 5px #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.10s ease;
+/* Adding the initial underline (not visible) */
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%; /* Start from the center */
+    bottom: 0; /* Position the underline at the bottom */
+    background-color: #0e0f0c; /* Same color as the link or choose any color */
+    transition: all 0.3s ease;
 }
+
+/* Hover Effect - Expand underline equally on both sides */
+.navbar .nav-link:hover::after{ /* If you want the underline on the active link as well */
+    width: 100%; /* Expand underline to the full width of the link */
+    left: 0; /* Reset to start from the left */
+}
+
+/* Hover Effect - Change text color */
+.navbar .nav-link:hover {
+    color: #f1c40f !important; /* Change text color on hover */
+}
+
+
+
+
+
 .container-fluid {
     padding-left: 0; /* Full width container without padding */
 }
@@ -81,7 +84,7 @@ body {
 }
 
 .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     position: absolute;
     top: 0;
     left: 0;
@@ -119,8 +122,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.hero-content a:hover {
-    background-color: #d4ac0d;
+#heroButton:hover {
+    background-color: #76dd4d;
     transform: scale(1.1);
 }
 
@@ -153,8 +156,8 @@ body {
     transition: transform 0.3s ease; /* Smooth transformation for hover effect */
 }
 
-/* Remove hover effect for social icons */
 .social-links-hero a:hover .social-icon {
+    border: 4px solid #76dd4d;
     transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 
@@ -166,6 +169,11 @@ body {
 }
 
 /* Section Title */
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 .section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -186,10 +194,6 @@ body {
     margin: 10px auto;
 }
 
-@keyframes slideIn {
-    from { transform: translateY(-20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
 
 /* About Section */
 #about p {
